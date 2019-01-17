@@ -6,12 +6,18 @@ public class Sorcier extends Personage {
         super(name);
     }
 
+/*
+ * Attack the victim with a charm and it will loose pdv.
+ */
     public void attaque(Victime p) {
         if (!this.mort()) {
             p.subitCharme((int) ((double) this.getVie()*(this.pouvoir)), this);
         }
     }
 
+/*
+ * Loose pdv from a Frappe of a monster, print if dead.
+ */
     protected void subitFrappe(int coup, Personage p){
         System.out.println(p.getNom() +" frappe "+ this.getNom()  + " avec une force de "+coup+".");
         this.addVie(-coup);
@@ -24,6 +30,9 @@ public class Sorcier extends Personage {
         }
     }
 
+/*
+ * Loose pdv from a Charm of a Sorcier, print if dead.
+ */
     protected void subitCharme(int coup, Personage p){
         System.out.print("Le sorcier "+ p.getNom() + " charme le sorcier "+ this.getNom()+", ça n'est pas très efficace et se fatigue: ");
         p.addVie(-1);
