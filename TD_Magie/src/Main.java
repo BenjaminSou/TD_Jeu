@@ -6,7 +6,7 @@ public class Main {
 
         // Initialisations
 
-        String namePlayer[] = {"Rocky", "Henri", "Benjamin", "Charmant", "Julien", "HEC", "ICN", "MINES","La Baguette", "Arthur le magicien"};
+        String namePlayer[] = {"Rocky", "Henri", "Jacques", "Charmant", "Arthur le magicien"};
         int i, attaquant, defenseur, mort, compteur = 0;
         double ifcase;
         //Scanner perso = new Scanner(System.in);
@@ -64,7 +64,7 @@ public class Main {
 
        // Fin de la boucle et résultat.
 
-       System.out.println("\n\n-------------RESULTATS VENER--------------\nAu bout de "+compteur+" tours\n");
+       System.out.println("\n\n------------- RESULTATS --------------\nAu bout de "+compteur+" tours\n");
 
        for(i = 0; i < tableauPersonnage.length; i++) {
            if (i%2 == 0){
