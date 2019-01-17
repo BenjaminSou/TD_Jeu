@@ -3,14 +3,10 @@ public class Monstre extends Personage {
     Monstre(String name){
         super(name);
     }
-
-    @Override
-    public void attaque(Victime p) {
-        if(!this.mort()){
-            p.subitFrappe(this.getVie()/2, this);
-        }
-    }
-
+    
+/*
+ * Lose pdv of the attack and if this die, print it.
+ */
     public void subitFrappe(int coup, Personage p) {
         System.out.println(p.getNom()+" frappe "+ this.getNom() + " avec une force de "+coup+".");
         this.addVie(-coup);
@@ -23,7 +19,21 @@ public class Monstre extends Personage {
         }
 
     }
+    
+/*
+ * When attacking, lose pdv.
+ */
+    @Override
+    public void attaque(Victime p) {
+        if(!this.mort()){
+            p.subitFrappe(this.getVie()/2, this);
+        }
+    }
 
+    
+/*
+ * Lose pdv of the charm and if this die, print it.
+ */
     public void subitCharme(int coup, Personage p){
         System.out.println(p.getNom()+" charme "+ this.getNom() + " avec une force de " + coup+".");
         this.addVie(-coup);
