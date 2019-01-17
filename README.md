@@ -7,15 +7,15 @@ Class Victime:
 
   Toute Victime peut subir soit des Frappes soit des Charmes.
 
---------------------
+-----------------
 Class Personnage:
---------------------
+-----------------
 
   Every Personnage is a Victime.
   name : Each have a singular name.
   pdv : lifepoints, hazardous number in range 1 to 100.
   
-  =Methods:=
+  Methods:
   
   - toString : Return name and life points or declare the death.
   - getVie : Return pdv.
@@ -50,9 +50,9 @@ Class Sorcier:
   
   Methods:
   
-    - sort : Define a random sort from the Sorcier power.
-    - subitFrappe : Loose pdv from a Frappe of a monster, print if dead.
-    - subitCharme : Loose pdv from a Charm of a Sorcier, print if dead.
+  - sort : Define a random sort from the Sorcier power.
+  - subitFrappe : Loose pdv from a Frappe of a monster, print if dead.
+  - subitCharme : Loose pdv from a Charm of a Sorcier, print if dead.
 
 --------------------
 Class SuperPouvoir:
