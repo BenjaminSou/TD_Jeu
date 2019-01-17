@@ -7,6 +7,9 @@ public class NainJardin extends Victime {
        this.solidite = (int)(Math.random()*100);
     }
 
+/*
+ * Die, or reflect the attack to the Personnage who send the attack.
+ */
     public void subitFrappe(int coup, Personage p){
         if(coup >= this.solidite){
             System.out.print(p.getNom()+" détruit un nain de jardin et perd "+ this.solidite + " pdv: ");
@@ -20,6 +23,10 @@ public class NainJardin extends Victime {
             System.out.println(p.getNom());
         }
     }
+    
+/*
+ * The Personnage who attacked lose 1 pdv.
+ */
     public void subitCharme(int coup, Personage p) {
         System.out.print(p.getNom()+" se fatigue pour rien sur un nain de jardin et perd 1 pdv: ");
         p.addVie(-1);
