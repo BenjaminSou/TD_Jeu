@@ -6,10 +6,16 @@ public class Magicien extends Sorcier implements SuperPouvoir {
         this.pouvoir *= extra;
     }
 
+/*
+ * Define a random power.
+ */
     public double sort(){
         return this.pouvoir*Math.random();
     }
 
+/*
+ * This lose pdv from an attack.
+ */
     public void subitCharme(int coup, Personage p){
         System.out.println("COUP = "+coup);
         int tape = (int)(coup*sort());
