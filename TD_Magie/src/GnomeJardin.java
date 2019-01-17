@@ -4,6 +4,9 @@ public class GnomeJardin extends NainJardin {
         super(name);
     }
 
+/*
+ * Gnome can't lose pdv and reflect the charme to the Personnage.
+ */
     public void subitCharme(int coup, Personage p){
 
         if(coup<soli2) {
