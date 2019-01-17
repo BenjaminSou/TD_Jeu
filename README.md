@@ -1,11 +1,11 @@
 # TD_Jeu
-Jeu de magicien se battant avec des monstres
+Wizard game, fighting against monsters.
 
 -----------------
 Class Victime:
 -----------------
 
-  Toute Victime peut subir soit des Frappes soit des Charmes.
+  Every Victime can endure either Frappes or Charmes.
 
 -----------------
 Class Personnage:
